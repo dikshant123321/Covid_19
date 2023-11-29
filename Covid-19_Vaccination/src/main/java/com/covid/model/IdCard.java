@@ -2,6 +2,7 @@ package com.covid.model;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,4 +22,6 @@ public class IdCard {
 	private String state;
 	private String city;
 	private String pincode;
+	@Embedded
+	private  PanCard pancard;
 }
