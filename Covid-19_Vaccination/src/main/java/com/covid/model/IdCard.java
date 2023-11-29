@@ -23,7 +23,7 @@ public class IdCard {
 	private String city;
 	private String pincode;
 	@Embedded
-	private  PanCard pancard;
+	private  PanCard panCard;
 	@Embedded
 	private AadharCard aadharCard;
 }
