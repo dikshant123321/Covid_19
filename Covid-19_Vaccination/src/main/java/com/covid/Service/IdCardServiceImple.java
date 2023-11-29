@@ -1,10 +1,11 @@
 package com.covid.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.covid.Repository.IdCardRepository;
 import com.covid.model.IdCard;
-
+@Service
 public class IdCardServiceImple implements IdCardService{
 
 	@Autowired

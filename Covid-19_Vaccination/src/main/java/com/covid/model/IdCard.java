@@ -24,4 +24,6 @@ public class IdCard {
 	private String pincode;
 	@Embedded
 	private  PanCard pancard;
+	@Embedded
+	private AadharCard aadharCard;
 }
