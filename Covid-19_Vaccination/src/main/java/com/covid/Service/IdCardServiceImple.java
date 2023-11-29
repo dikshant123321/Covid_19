@@ -18,5 +18,11 @@ public class IdCardServiceImple implements IdCardService{
 		
 	}
 
+	@Override
+	public IdCard findByPanNumber(String panNumber) {
+		 IdCard idcards= idRepository.findByPanCard(panNumber);
+		return idcards;
+	}
+
 	
 }
