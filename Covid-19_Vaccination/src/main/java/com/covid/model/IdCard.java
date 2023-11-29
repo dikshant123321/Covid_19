@@ -21,8 +21,4 @@ public class IdCard {
 	private String state;
 	private String city;
 	private String pincode;
-	
-
-	
-
 }
