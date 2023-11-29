@@ -24,5 +24,11 @@ public class IdCardServiceImple implements IdCardService{
 		 return idcards;
 	}
 
+	@Override
+	public IdCard findByAadharCardNumber(Long aadharCard) {
+		 IdCard idcard= idRepository.findByAdharCardNumber(aadharCard);
+		return idcard;
+	}
+
 	
 }

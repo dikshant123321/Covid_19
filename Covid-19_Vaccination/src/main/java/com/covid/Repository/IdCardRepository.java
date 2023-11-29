@@ -9,9 +9,8 @@ public interface IdCardRepository extends JpaRepository<IdCard, Integer>{
 
 	 @Query("SELECT idCard FROM IdCard idCard WHERE idCard.panCard.panNumber = :panNumber")
 	 IdCard findByPanCard(String panNumber);
+	 
+	 @Query("SELECT idCard FROM IdCard idcard WHERE idcard.aadharCard.aadharNumber=:aadharCard")
+	 IdCard findByAdharCardNumber(Long aadharNumber);
 }
 
-//@Embedded
-//private  PanCard pancard;
-//@Embedded
-//private AadharCard aadharCard;

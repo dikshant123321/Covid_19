@@ -33,4 +33,12 @@ public class IdCardController {
 	}
 	
 	
+	@GetMapping("/getIdCardByAadharCardNumber/{aadharNumber}")
+	public ResponseEntity<IdCard> getAadharCardDetails(@PathVariable("aadharNumber") Long aadharNumber)
+	{
+		      IdCard idCard= idCardService.findByAadharCardNumber(aadharNumber);
+		      return new ResponseEntity<IdCard>(idCard,HttpStatus.ACCEPTED);
+	}
+	
+	
 }
